@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b1730"><meta name="description" content="ETHEREAL Class Hub — the digital home of TBI 5E, English Education Department."><title>ETHEREAL Class Hub — TBI 5E</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Kaushan+Script&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<canvas id="etherealAtmosphere" class="eth-atmosphere" aria-hidden="true"></canvas>
+<div class="eth-bokeh-overlay" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="eth-vignette-overlay" aria-hidden="true"></div>
+<div class="eth-transition-wash" id="ethTransitionWash" aria-hidden="true"></div>
+<div class="intro-screen" id="introScreen" aria-label="ETHEREAL Class introduction">
+  <div class="intro-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="intro-celestial" aria-hidden="true">
+    <div class="celestial-halo"></div><div class="celestial-orbit celestial-orbit-a"></div>
+    <div class="celestial-orbit celestial-orbit-b"></div><div class="celestial-orbit celestial-orbit-c"></div>
+    <div class="celestial-beam"></div><span class="celestial-star star-a">✦</span>
+    <span class="celestial-star star-b">✧</span><span class="celestial-star star-c">✦</span>
+    <span class="celestial-star star-d">✧</span>
+  </div>
+  <div class="intro-glow"></div><div class="intro-content">
+    <div class="intro-kicker">TBI 5E <span>✦</span> ENGLISH EDUCATION</div>
+    <h1 class="intro-wordmark intro-wordmark-draw" aria-label="ETHEREAL">
+      <svg class="intro-lettering-svg" viewBox="0 0 1200 230" role="img" aria-hidden="true" focusable="false">
+        <defs><filter id="introNeonBlur" x="-35%" y="-65%" width="170%" height="230%"><feGaussianBlur stdDeviation="5.5"/></filter></defs>
+        <g class="intro-letter intro-letter-1"><text class="intro-lettering-glow" x="270" y="176">E</text><text class="intro-lettering-core" x="270" y="176">E</text></g>
+        <g class="intro-letter intro-letter-2"><text class="intro-lettering-glow" x="365" y="176">T</text><text class="intro-lettering-core" x="365" y="176">T</text></g>
+        <g class="intro-letter intro-letter-3"><text class="intro-lettering-glow" x="465" y="176">H</text><text class="intro-lettering-core" x="465" y="176">H</text></g>
+        <g class="intro-letter intro-letter-4"><text class="intro-lettering-glow" x="580" y="176">E</text><text class="intro-lettering-core" x="580" y="176">E</text></g>
+        <g class="intro-letter intro-letter-5"><text class="intro-lettering-glow" x="675" y="176">R</text><text class="intro-lettering-core" x="675" y="176">R</text></g>
+        <g class="intro-letter intro-letter-6"><text class="intro-lettering-glow" x="780" y="176">E</text><text class="intro-lettering-core" x="780" y="176">E</text></g>
+        <g class="intro-letter intro-letter-7"><text class="intro-lettering-glow" x="875" y="176">A</text><text class="intro-lettering-core" x="875" y="176">A</text></g>
+        <g class="intro-letter intro-letter-8"><text class="intro-lettering-glow" x="990" y="176">L</text><text class="intro-lettering-core" x="990" y="176">L</text></g>
+        <path class="intro-lettering-spark" d="M155 55 l0 20 m-10 -10 h20 M1045 48 l0 20 m-10 -10 h20"/>
+      </svg>
+    </h1>
+    <p class="intro-welcome">Welcome to our class website</p>
+    <button class="intro-enter" id="enterSite">ENTER CLASS HUB <span>↗</span></button>
+    <button class="intro-skip" id="skipIntro">Skip intro</button>
+  </div>
+</div>
+<header class="topbar"><a class="brand" href="#home"><span class="brand-mark">E</span><span><b>TBI 5E</b><small>ETHEREAL · ENGLISH EDUCATION</small></span></a><button class="menu-toggle" id="menuToggle">☰</button><nav id="mainNav"><a href="#home">Home</a><a href="#organization">Organization</a><a href="#members">Members</a><a href="#schedule">Schedule</a><a href="#announcements">Announcements</a><a href="#course-coordinators">PJ Mata Kuliah</a><a href="#class-cash">Class Cash</a><a href="#guestbook">Guestbook</a><a href="#confessions">Confessions</a><a href="#achievements">Achievements</a><a href="#gallery">Memories</a></nav><a class="nav-cta" href="#members">Meet the MVPs ↗</a></header>
+<main><section class="hero section-wrap" id="home"><div class="hero-copy"><div class="eyebrow">OUR CLASS • OUR STORY</div><h1>THE REAL<br><em>MVP.</em></h1><p class="hero-text">Welcome to the digital home of <strong>TBI 5E</strong> — curious minds, shared ambitions, and one community growing together through every chapter of our English Education journey.</p><div class="hero-actions"><a class="button button-gold" href="#organization">Meet our team ↗</a><a class="text-link" href="#schedule">View class schedule →</a></div><div class="hero-foot">ENGLISH EDUCATION DEPARTMENT • TBI 5E</div></div><div class="hero-visual"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="hero-card"><div class="hero-card-top"><span>CLASS PROFILE</span><span>● CONNECTED</span></div><div class="monogram" aria-label="TBI 5E class identity"><span class="profile-identity-draw" role="img" aria-label="5E">
+<svg class="profile-identity-svg" viewBox="0 0 220 145" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="profileNeonBlur" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.2" />
+    </filter>
+  </defs>
+  <g class="identity-letter identity-five">
+    <text class="identity-glow" x="12" y="104">5</text>
+    <text class="identity-core" x="12" y="104">5</text>
+  </g>
+  <g class="identity-letter identity-e">
+    <text class="identity-glow" x="112" y="104">E</text>
+    <text class="identity-core" x="112" y="104">E</text>
+  </g>
+  <path class="identity-swash" d="M24 119 C66 143 147 139 196 116" />
+  <g class="identity-sparkles" aria-hidden="true">
+    <path d="M8 42 L8 56 M1 49 L15 49 M202 34 L202 48 M195 41 L209 41 M108 13 L108 23 M103 18 L113 18" />
+    <circle cx="32" cy="22" r="2"/><circle cx="185" cy="67" r="2"/><circle cx="85" cy="132" r="1.8"/>
+  </g>
+</svg></span><small class="hero-ethereal">ETHEREAL</small></div><div class="hero-card-bottom"><div><small>OUR IDENTITY</small><b>THE REAL<br>MVP.</b></div><span class="card-star">✳</span></div></div><div class="floating-note note-top"><span>✦</span><div><b>31 members</b><small>One community</small></div></div><div class="floating-note note-bottom"><span>↗</span><div><b>Keep growing</b><small>Every day, together</small></div></div></div></section>
+<section class="clock-strip section-wrap" aria-label="Waktu saat ini">
+<div class="clock-icon">◷</div><div class="clock-copy"><small>JAKARTA • WESTERN INDONESIA TIME</small><strong id="digitalClock">00:00:00</strong><span id="digitalDate">Loading date...</span></div>
+<div class="clock-status"><span class="live-dot"></span> LIVE CLASS CLOCK</div>
+</section>
+
+<section class="section-wrap section-block live-announcement-section" id="announcements">
+  <div class="section-heading"><div><div class="eyebrow">STAY IN THE LOOP</div><h2>Class <em>announcements.</em></h2></div><p>Important updates and little reminders for the TBI 5E community.</p></div>
+  <div class="announcement-board feature-panel">
+    <div class="announcement-board-head"><div><span class="mini-label">ETHEREAL NOTICE BOARD</span><h3>Latest class updates</h3></div><span class="live-status"><i></i> LOCAL BOARD</span></div>
+    <form id="announcementForm" class="mini-form announcement-form">
+      <label>Announcement title<input id="announcementTitle" maxlength="70" placeholder="e.g. Class schedule update" required></label>
+      <label>Category<select id="announcementCategory"><option>Reminder</option><option>Academic</option><option>Schedule</option><option>Class News</option></select></label>
+      <label class="full-field">Message<textarea id="announcementMessage" maxlength="260" rows="2" placeholder="Write a short update for the class..." required></textarea></label>
+      <button class="mini-submit" type="submit">POST ANNOUNCEMENT ↗</button>
+    </form>
+    <div id="announcementList" class="announcement-list" aria-live="polite"></div>
+    <small class="local-note">Updates are saved in this browser only. Connect a shared database to publish announcements to every visitor.</small>
+  </div>
+</section>
+
+<section class="stats section-wrap"><div><strong>31</strong><span>CLASS MEMBERS</span></div><div><strong>07</strong><span>CLASS OFFICERS</span></div><div><strong>EN</strong><span>ENGLISH EDUCATION</span></div><div><strong>5E</strong><span>OUR CLASS IDENTITY</span></div></section>
+<section class="section-wrap section-block" id="organization"><div class="section-heading"><div><div class="eyebrow">THE PEOPLE BEHIND THE CLASS</div><h2>Class <em>organization.</em></h2></div><p>Meet the class officers who help coordinate our academic journey and keep our community connected.</p></div><div class="org-panel"><div class="org-topline"><span>CLASS ORGANIZATIONAL STRUCTURE</span><span>TBI 5E</span></div><div class="org-chart">
+<div class="org-level"><article class="person-card"><div class="avatar avatar-gold">CL</div><div><small>CLASS LEADER</small><h3>Muh. Abiqi Muqtada</h3><p>NIM: 1860203243173</p></div></article></div>
+<div class="connector"></div>
+<div class="org-level pair">
+<article class="person-card"><div class="avatar avatar-gold">V1</div><div><small>VICE CLASS LEADER I</small><h3>Meta Khoirunnisa&#x27;</h3><p>NIM: 1860203242125</p></div></article>
+<article class="person-card"><div class="avatar avatar-gold">V2</div><div><small>VICE CLASS LEADER II</small><h3>Vira Rahma Andini</h3><p>NIM: 1860203242127</p></div></article>
+</div>
+<div class="connector"></div>
+<div class="org-level pair">
+<article class="person-card"><div class="avatar avatar-gold">S1</div><div><small>SECRETARY I</small><h3>Salwa Nur Azizah</h3><p>NIM: 1860203241048</p></div></article>
+<article class="person-card"><div class="avatar avatar-gold">S2</div><div><small>SECRETARY II</small><h3>Shofia Nur Amalia</h3><p>NIM: 1860203241050</p></div></article>
+</div>
+<div class="connector"></div>
+<div class="org-level pair">
+<article class="person-card"><div class="avatar avatar-gold">T1</div><div><small>TREASURER I</small><h3>Nayla Saskia Brylianti</h3><p>NIM: 1860203242153</p></div></article>
+<article class="person-card"><div class="avatar avatar-gold">T2</div><div><small>TREASURER II</small><h3>Halimatus Sa&#x27;diyah</h3><p>NIM: 1860203242152</p></div></article>
+</div></div><div class="edit-hint">Class officers • Academic year 2026/2027</div></div></section>
+<section class="section-wrap section-block" id="members"><div class="section-heading"><div><div class="eyebrow">THE PEOPLE OF TBI 5E</div><h2>Meet our <em>members.</em></h2></div><p>31 individuals, different strengths, and one shared classroom community. Listed in official attendance-number order.</p></div><div class="member-tools"><div class="search-box"><span>⌕</span><input id="memberSearch" type="search" placeholder="Search name, NIM, or role..."></div><span class="member-count" id="memberCount">31 MEMBERS</span></div><div class="member-grid" id="memberGrid"><article class="member-card" data-name="Rosyid Syahru Romadhon" data-role="Member">
+<div class="member-photo photo-1">RS</div>
+<div class="member-info"><small>ABSEN 01 · MEMBER</small><h3>Rosyid Syahru Romadhon</h3><p class="nim">NIM: 1860203241016</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Nadhya Azti Firdhani" data-role="Member">
+<div class="member-photo photo-2">NA</div>
+<div class="member-info"><small>ABSEN 02 · MEMBER</small><h3>Nadhya Azti Firdhani</h3><p class="nim">NIM: 1860203241020</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Muhammad Zaki Azra" data-role="Member">
+<div class="member-photo photo-3">MZ</div>
+<div class="member-info"><small>ABSEN 03 · MEMBER</small><h3>Muhammad Zaki Azra</h3><p class="nim">NIM: 1860203241021</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Azis Rafli Mars Setianto" data-role="Member">
+<div class="member-photo photo-4">AR</div>
+<div class="member-info"><small>ABSEN 04 · MEMBER</small><h3>Azis Rafli Mars Setianto</h3><p class="nim">NIM: 1860203241026</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Ays Vidya Agustya Putri" data-role="Member">
+<div class="member-photo photo-5">AV</div>
+<div class="member-info"><small>ABSEN 05 · MEMBER</small><h3>Ays Vidya Agustya Putri</h3><p class="nim">NIM: 1860203241036</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Fitria Nurazizah" data-role="Member">
+<div class="member-photo photo-6">FN</div>
+<div class="member-info"><small>ABSEN 06 · MEMBER</small><h3>Fitria Nurazizah</h3><p class="nim">NIM: 1860203241037</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Adziva Nurfatikha Sari" data-role="Member">
+<div class="member-photo photo-7">AN</div>
+<div class="member-info"><small>ABSEN 07 · MEMBER</small><h3>Adziva Nurfatikha Sari</h3><p class="nim">NIM: 1860203241038</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Fentin Ludvianaza" data-role="Member">
+<div class="member-photo photo-8">FL</div>
+<div class="member-info"><small>ABSEN 08 · MEMBER</small><h3>Fentin Ludvianaza</h3><p class="nim">NIM: 1860203241043</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Salwa Nur Azizah" data-role="Member">
+<div class="member-photo photo-9">SN</div>
+<div class="member-info"><small>ABSEN 09 · MEMBER</small><h3>Salwa Nur Azizah</h3><p class="nim">NIM: 1860203241048</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Rahma Laksmita Defi Mafiroh" data-role="Member">
+<div class="member-photo photo-10">RL</div>
+<div class="member-info"><small>ABSEN 10 · MEMBER</small><h3>Rahma Laksmita Defi Mafiroh</h3><p class="nim">NIM: 1860203241049</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Shofia Nur Amalia" data-role="Member">
+<div class="member-photo photo-11">SN</div>
+<div class="member-info"><small>ABSEN 11 · MEMBER</small><h3>Shofia Nur Amalia</h3><p class="nim">NIM: 1860203241050</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Lindie Artika Aulia Putri" data-role="Member">
+<div class="member-photo photo-12">LA</div>
+<div class="member-info"><small>ABSEN 12 · MEMBER</small><h3>Lindie Artika Aulia Putri</h3><p class="nim">NIM: 1860203241051</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Felinda Laksita Dyatma" data-role="Member">
+<div class="member-photo photo-1">FL</div>
+<div class="member-info"><small>ABSEN 13 · MEMBER</small><h3>Felinda Laksita Dyatma</h3><p class="nim">NIM: 1860203241052</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Ayudya Nur Fanisa" data-role="Member">
+<div class="member-photo photo-2">AN</div>
+<div class="member-info"><small>ABSEN 14 · MEMBER</small><h3>Ayudya Nur Fanisa</h3><p class="nim">NIM: 1860203241053</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Faizal Eriyan Saputra" data-role="Member">
+<div class="member-photo photo-3">FE</div>
+<div class="member-info"><small>ABSEN 15 · MEMBER</small><h3>Faizal Eriyan Saputra</h3><p class="nim">NIM: 1860203241054</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Meta Khoirunnisa&#x27;" data-role="Vice Class Leader I">
+<div class="member-photo photo-4">MK</div>
+<div class="member-info"><small>ABSEN 16 · VICE CLASS LEADER I</small><h3>Meta Khoirunnisa&#x27;</h3><p class="nim">NIM: 1860203242125</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Vira Rahma Andini" data-role="Vice Class Leader II">
+<div class="member-photo photo-5">VR</div>
+<div class="member-info"><small>ABSEN 17 · VICE CLASS LEADER II</small><h3>Vira Rahma Andini</h3><p class="nim">NIM: 1860203242127</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Afiq Tri Fauzi" data-role="Member">
+<div class="member-photo photo-6">AT</div>
+<div class="member-info"><small>ABSEN 18 · MEMBER</small><h3>Afiq Tri Fauzi</h3><p class="nim">NIM: 1860203242128</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Ahmad Wildan Sulthoni" data-role="Member">
+<div class="member-photo photo-7">AW</div>
+<div class="member-info"><small>ABSEN 19 · MEMBER</small><h3>Ahmad Wildan Sulthoni</h3><p class="nim">NIM: 1860203242129</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Nida Rya Rosidah" data-role="Member">
+<div class="member-photo photo-8">NR</div>
+<div class="member-info"><small>ABSEN 20 · MEMBER</small><h3>Nida Rya Rosidah</h3><p class="nim">NIM: 1860203242131</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Ahmad Muhammad" data-role="Member">
+<div class="member-photo photo-9">AM</div>
+<div class="member-info"><small>ABSEN 21 · MEMBER</small><h3>Ahmad Muhammad</h3><p class="nim">NIM: 1860203242132</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Favian Riza" data-role="Member">
+<div class="member-photo photo-10">FR</div>
+<div class="member-info"><small>ABSEN 22 · MEMBER</small><h3>Favian Riza</h3><p class="nim">NIM: 1860203242134</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Halimatus Sa&#x27;diyah" data-role="Treasurer II">
+<div class="member-photo photo-11">HS</div>
+<div class="member-info"><small>ABSEN 23 · TREASURER II</small><h3>Halimatus Sa&#x27;diyah</h3><p class="nim">NIM: 1860203242152</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Nayla Saskia Brylianti" data-role="Treasurer I">
+<div class="member-photo photo-12">NS</div>
+<div class="member-info"><small>ABSEN 24 · TREASURER I</small><h3>Nayla Saskia Brylianti</h3><p class="nim">NIM: 1860203242153</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Kurnia Sobirin" data-role="Member">
+<div class="member-photo photo-1">KS</div>
+<div class="member-info"><small>ABSEN 25 · MEMBER</small><h3>Kurnia Sobirin</h3><p class="nim">NIM: 1860203242156</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Hafiz Yudhatama" data-role="Member">
+<div class="member-photo photo-2">HY</div>
+<div class="member-info"><small>ABSEN 26 · MEMBER</small><h3>Hafiz Yudhatama</h3><p class="nim">NIM: 1860203242157</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Muhammad Danish Prayoga" data-role="Member">
+<div class="member-photo photo-3">MD</div>
+<div class="member-info"><small>ABSEN 27 · MEMBER</small><h3>Muhammad Danish Prayoga</h3><p class="nim">NIM: 1860203242158</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Ahmad Faizud Daroini" data-role="Member">
+<div class="member-photo photo-4">AF</div>
+<div class="member-info"><small>ABSEN 28 · MEMBER</small><h3>Ahmad Faizud Daroini</h3><p class="nim">NIM: 1860203242159</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Nazia Rifatuz Zahra" data-role="Member">
+<div class="member-photo photo-5">NR</div>
+<div class="member-info"><small>ABSEN 29 · MEMBER</small><h3>Nazia Rifatuz Zahra</h3><p class="nim">NIM: 1860203242160</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Muh. Abiqi Muqtada" data-role="Class Leader">
+<div class="member-photo photo-6">MA</div>
+<div class="member-info"><small>ABSEN 30 · CLASS LEADER</small><h3>Muh. Abiqi Muqtada</h3><p class="nim">NIM: 1860203243173</p></div><span class="member-arrow">↗</span></article><article class="member-card" data-name="Ana Fatus Sholekah" data-role="Member">
+<div class="member-photo photo-7">AF</div>
+<div class="member-info"><small>ABSEN 31 · MEMBER</small><h3>Ana Fatus Sholekah</h3><p class="nim">NIM: 1860203243174</p></div><span class="member-arrow">↗</span></article></div><p class="small-note">Names, NIMs, and attendance order are based on the supplied TBI 5E attendance PDF.</p></section>
+<section class="schedule-section" id="schedule"><div class="section-wrap section-block"><div class="section-heading"><div><div class="eyebrow">PLAN YOUR WEEK</div><h2>Class <em>schedule.</em></h2></div><p>Official weekly timetable information supplied for TBI 5E.</p></div><div class="schedule-panel"><div class="schedule-header"><div><span class="mini-label">WEEKLY TIMETABLE</span><h3>Schedule of TBI 5E</h3></div><span class="semester-tag">TBI 5E • SEMESTER 5</span></div><div class="smart-schedule" id="smartSchedule" aria-live="polite"><div class="smart-schedule-icon">◷</div><div><small>YOUR CLASS STATUS · JAKARTA TIME</small><strong id="todayScheduleTitle">Checking today’s schedule…</strong><p id="todayScheduleDetail">Finding the next class for TBI 5E.</p></div><span class="today-chip" id="todayScheduleChip">LIVE</span></div><div class="table-scroll"><table><thead><tr><th>DAY</th><th>TIME</th><th>COURSE / CREDIT</th><th>LECTURER / ROOM</th></tr></thead><tbody><tr><td><span class="day-pill">MONDAY</span></td><td>08.40–12.00</td><td><b>Research Method in ELT</b><small>4 SKS</small></td><td>Erna Iftanti<small>Gd. D 1.06</small></td></tr><tr><td><span class="day-pill">MONDAY</span></td><td>13.00–16.20</td><td><b>English Learning Assessment</b><small>4 SKS</small></td><td>Ida Isnawati<small>Gd. D 3.02</small></td></tr><tr><td><span class="day-pill">TUESDAY</span></td><td>13.00–16.20</td><td><b>Academic Writing</b><small>4 SKS</small></td><td>Nanik Sri Rahayu<small>Gd. D 3.02</small></td></tr><tr><td><span class="day-pill">WEDNESDAY</span></td><td>08.40–10.20</td><td><b>Research Statistics in ELT</b><small>2 SKS</small></td><td>Muh. Basuni<small>Gd. D 3.04</small></td></tr><tr><td><span class="day-pill">WEDNESDAY</span></td><td>10.20–12.00</td><td><b>English Grammar and Corpus</b><small>2 SKS</small></td><td>Faizatul Istiqomah<small>Gd. D 3.04</small></td></tr><tr><td><span class="day-pill">THURSDAY</span></td><td>13.00–15.30</td><td><b>Hybrid English Language Teaching (HELT)</b><small>3 SKS</small></td><td>Ary Setya Budhi Ningrum<small>Gd. D 1.06</small></td></tr><tr><td><span class="day-pill">FRIDAY</span></td><td>09.30–12.00</td><td><b>Critical Reading Comp</b><small>3 SKS</small></td><td>Prof. Dr. Dwi Ima Herminingsih M.Hum<small>Gd (opsional)</small></td></tr></tbody></table></div><div class="table-foot">✦ Check class announcements for any schedule changes. <span>2026 / 2027</span></div></div></div></section>
+<section class="section-wrap section-block course-coordinator-section" id="course-coordinators">
+  <div class="section-heading">
+    <div><div class="eyebrow">ACADEMIC TEAM · TBI 5E</div><h2>Course <em>coordinators.</em></h2></div>
+    <p>Meet the student coordinators responsible for supporting and organizing each course.</p>
+  </div>
+  <div class="coordinator-grid">
+    <article class="coordinator-card"><span class="coordinator-index">01</span><div class="coordinator-icon">✧</div><small>4 SKS · MONDAY</small><h3>Research Method in ELT</h3><div class="coordinator-rule"></div><span class="coordinator-label">COURSE COORDINATORS</span><div class="coordinator-names"><span>01 · Vira Rahma Andini</span><span>02 · Rosyid Syahru Romadhon</span></div></article>
+    <article class="coordinator-card"><span class="coordinator-index">02</span><div class="coordinator-icon">✧</div><small>4 SKS · MONDAY</small><h3>English Learning Assessment</h3><div class="coordinator-rule"></div><span class="coordinator-label">COURSE COORDINATORS</span><div class="coordinator-names"><span>01 · Meta Khoirunnisa'</span><span>02 · Lindie Artika Aulia Putri</span></div></article>
+    <article class="coordinator-card"><span class="coordinator-index">03</span><div class="coordinator-icon">✧</div><small>4 SKS · TUESDAY</small><h3>Academic Writing</h3><div class="coordinator-rule"></div><span class="coordinator-label">COURSE COORDINATORS</span><div class="coordinator-names"><span>01 · Azis Rafli Mars Setianto</span><span>02 · Shofia Nur Amalia</span></div></article>
+    <article class="coordinator-card"><span class="coordinator-index">04</span><div class="coordinator-icon">✧</div><small>2 SKS · WEDNESDAY</small><h3>Research Statistics in ELT</h3><div class="coordinator-rule"></div><span class="coordinator-label">COURSE COORDINATORS</span><div class="coordinator-names"><span>01 · Ahmad Wildan Sulthoni</span><span>02 · Faizal Eriyan Saputra</span></div></article>
+    <article class="coordinator-card"><span class="coordinator-index">05</span><div class="coordinator-icon">✧</div><small>2 SKS · WEDNESDAY</small><h3>English Grammar and Corpus</h3><div class="coordinator-rule"></div><span class="coordinator-label">COURSE COORDINATORS</span><div class="coordinator-names"><span>01 · Favian Riza</span><span>02 · Muhammad Danish Prayoga</span></div></article>
+    <article class="coordinator-card"><span class="coordinator-index">06</span><div class="coordinator-icon">✧</div><small>3 SKS · THURSDAY</small><h3>Hybrid English Language Teaching (HELT)</h3><div class="coordinator-rule"></div><span class="coordinator-label">COURSE COORDINATORS</span><div class="coordinator-names"><span>01 · Hafiz Yudhatama</span><span>02 · Ahmad Faizud Daroini</span></div></article>
+    <article class="coordinator-card"><span class="coordinator-index">07</span><div class="coordinator-icon">✧</div><small>3 SKS · FRIDAY</small><h3>Critical Reading Comp</h3><div class="coordinator-rule"></div><span class="coordinator-label">COURSE COORDINATORS</span><div class="coordinator-names"><span>01 · Adziva Nurfatikha Sari</span><span>02 · Rahma Laksmita Defi Mafiroh</span></div></article>
+  </div>
+  <p class="coordinator-footnote">✦ Thank you to all course coordinators for supporting TBI 5E.</p>
+</section>
+<section class="section-wrap section-block achievement-section" id="achievements">
+ <div class="section-heading"><div><div class="eyebrow">CELEBRATING OUR PEOPLE</div><h2>Hall of <em>achievement.</em></h2></div><p>Every achievement is a reason to be proud. We celebrate the effort, courage, and growth of our members.</p></div>
+ <article class="achievement-feature"><div class="achievement-photo"><img src="images/ethereal-first-winner.jpeg" alt="Shofia Nur Amalia holding her first-place essay competition trophy" loading="lazy"><span class="achievement-medal">★ FIRST PLACE</span></div>
+ <div class="achievement-copy"><div class="eyebrow">ETHEREAL · CLASS ACHIEVEMENT</div><div class="achievement-number">01</div><h3>Shofia Nur <em>Amalia.</em></h3><p class="achievement-award">1st Winner · Essay Competition (Extension Event)</p><p>Celebrating a proud moment and the dedication behind this achievement. May it inspire the whole ETHEREAL community to keep learning, creating, and reaching higher.</p><div class="achievement-signature">PROUD MOMENT · TBI 5E</div></div></article>
+</section>
+<section class="section-wrap quote-section"><div class="quote-mark">“</div><div><div class="eyebrow">A LITTLE INSPIRATION</div><blockquote id="dailyQuote">Great things are done by a series of small things brought together.</blockquote><span id="quoteAuthor">— Vincent van Gogh</span></div><span class="quote-label">QUOTE OF THE DAY</span></section>
+<section class="gallery-section" id="gallery">
+<div class="section-wrap section-block">
+  <div class="gallery-intro">
+    <div class="gallery-heading">
+      <div class="eyebrow">MOMENTS THAT MATTER · TBI 5E</div>
+      <h2>Class <em>Gallery.</em></h2>
+      <p>Good memories, greater together. A little collection of moments from our journey as one class.</p>
+    </div>
+    <a class="gallery-open" href="https://drive.google.com/drive/folders/1fl9JOlNKdIZ5a8BgplcAtY8vfI6ca_l4" target="_blank" rel="noopener">Explore all memories <span>↗</span></a>
+  </div>
+
+  <div class="memory-timeline"><div class="timeline-item"><span class="timeline-dot"></span><small>OUR JOURNEY</small><b>Growing as one class</b><p>From everyday lectures to moments worth remembering.</p></div><div class="timeline-item"><span class="timeline-dot"></span><small>CLASS MEMORIES</small><b>ETATION MMXXVI</b><p>Sharing the stage, laughter, and unforgettable moments.</p></div><div class="timeline-item"><span class="timeline-dot"></span><small>CLASS PRIDE</small><b>Celebrating achievements</b><p>Every member has a story, and every milestone matters.</p></div></div>
+  <div class="ethereal-photo-grid">
+    <article class="ethereal-photo-card ethereal-featured">
+      <div class="ethereal-photo-frame">
+        <img src="images/ethereal-class-moments.jpeg" alt="TBI 5E class group moments at a formal gathering" loading="lazy">
+        <span class="ethereal-photo-title">ETHEREAL</span>
+      </div>
+      <div class="ethereal-photo-caption"><span><b>ETHEREAL · Class Memories</b><small>One class, countless moments together</small></span><span class="photo-index">01</span></div>
+    </article>
+    <article class="ethereal-photo-card">
+      <div class="ethereal-photo-frame">
+        <img src="images/ethereal-event.jpeg" alt="TBI 5E members at the ETATION MMXXVI event" loading="lazy">
+      </div>
+      <div class="ethereal-photo-caption"><span><b>ETATION MMXXVI</b><small>A joyful moment from our class event</small></span><span class="photo-index">02</span></div>
+    </article>
+  </div>
+  <div class="gallery-bottom"><span>✦ MADE OF LITTLE MOMENTS</span><span>OPEN THE SHARED CLASS ARCHIVE ↗</span></div>
+</div>
+</section>
+<section class="section-wrap section-block cash-section" id="class-cash">
+  <div class="section-heading"><div><div class="eyebrow">TRANSPARENT · TRUSTED · TOGETHER</div><h2>Class <em>cash.</em></h2></div><p>Our shared class fund, recorded transparently for every TBI 5E member.</p></div>
+  <div class="cash-panel feature-panel">
+    <div class="cash-topline"><div><span class="mini-label">ETHEREAL TREASURY</span><h3>Class finance overview</h3></div><span class="cash-live"><i></i> SHARED DATABASE</span></div>
+    <div class="cash-summary"><article class="cash-balance"><small>CURRENT BALANCE</small><strong id="cashBalance">Rp0</strong><span>Income minus expenses</span></article><article><small>TOTAL INCOME</small><strong id="cashIncome">Rp0</strong><span>All recorded deposits</span></article><article><small>TOTAL EXPENSES</small><strong id="cashExpense">Rp0</strong><span>All recorded spending</span></article></div>
+    <div class="cash-toolbar"><div><span class="mini-label">TRANSACTION HISTORY</span><h3>Latest records</h3></div><div class="cash-auth"><span id="cashAuthStatus">Viewer access</span><button type="button" class="cash-login-btn" id="cashLoginToggle">Treasurer login</button><button type="button" class="cash-logout-btn" id="cashLogout" hidden>Log out</button></div></div>
+    <form id="cashLoginForm" class="cash-login-form" hidden><label>Treasurer email<input id="cashEmail" type="email" autocomplete="username" placeholder="Treasurer email" required></label><label>Password<input id="cashPassword" type="password" autocomplete="current-password" placeholder="Password" required></label><button class="mini-submit" type="submit">LOGIN AS TREASURER</button><p id="cashLoginMessage" role="status"></p></form>
+    <form id="cashTransactionForm" class="cash-transaction-form" hidden><input type="hidden" id="cashEditId"><label>Transaction type<select id="cashType"><option value="income">Income</option><option value="expense">Expense</option></select></label><label>Amount (IDR)<input id="cashAmount" type="number" min="1" step="1" placeholder="e.g. 25000" required></label><label>Description<input id="cashDescription" maxlength="120" placeholder="e.g. Class monthly contribution" required></label><label>Date<input id="cashDate" type="date" required></label><div class="cash-form-actions"><button class="mini-submit" id="cashSaveBtn" type="submit">SAVE TRANSACTION</button><button class="cash-cancel-btn" id="cashCancelEdit" type="button" hidden>Cancel edit</button></div><p id="cashFormMessage" role="status"></p></form>
+    <div class="dues-divider"><span class="mini-label">WEDNESDAY CLASS CONTRIBUTION</span><h3>Weekly class dues · Payment status</h3><p>The IDR 5,000 class contribution is collected every Wednesday. Students can view the PAID and UNPAID name lists. Only the treasurer can update payment status.</p></div>
+    <div class="dues-controls"><label>Month<select id="duesMonth"></select></label><label>Year<select id="duesYear"></select></label><label>Wednesday date<select id="duesDate"></select></label><label class="dues-amount-field">Contribution amount (IDR)<input id="duesAmount" type="number" min="5000" step="5000" value="5000" readonly aria-label="Fixed IDR 5,000 contribution every Wednesday"></label><button id="duesCreatePeriod" class="mini-submit" type="button" hidden>PREPARE WEDNESDAY</button></div>
+    <label class="dues-search-label" for="duesSearch">Search student name</label><input id="duesSearch" class="dues-search" type="search" placeholder="Type a student name..." autocomplete="off">
+    <div id="duesAdminMessage" class="dues-message" role="status"></div>
+    
+    <div id="duesList" class="dues-list" aria-live="polite"><p class="empty-state">Loading monthly dues...</p></div>
+    <div class="cash-filter-row"><label for="cashFilter">Show</label><select id="cashFilter"><option value="all">All transactions</option><option value="income">Income only</option><option value="expense">Expenses only</option></select></div>
+    <div id="cashTransactionList" class="cash-transaction-list" aria-live="polite"><p class="empty-state">Connecting to the class finance database...</p></div><p class="cash-footnote">All members can view the records. Only authorized treasurer accounts can manage transactions.</p>
+  </div>
+</section>
+<section class="section-wrap section-block guestbook-section" id="guestbook">
+  <div class="section-heading"><div><div class="eyebrow">LEAVE A LITTLE KINDNESS</div><h2>Class <em>guestbook.</em></h2></div><p>A small space for memories, encouragement, and messages for our TBI 5E family.</p></div>
+  <div class="guestbook-panel feature-panel">
+    <div class="panel-topline"><span>NOTES FROM OUR COMMUNITY</span><span>ETHEREAL · 5E</span></div>
+    <form id="guestbookForm" class="guestbook-form">
+      <label>Your name<input id="guestbookName" maxlength="36" placeholder="Write your name" required></label>
+      <label>Your message<textarea id="guestbookMessage" maxlength="220" rows="3" placeholder="Leave a kind message for the class..." required></textarea></label>
+      <button class="mini-submit" type="submit">SIGN THE GUESTBOOK ✦</button>
+    </form>
+    <div id="guestbookList" class="guestbook-list" aria-live="polite"></div>
+    <small class="local-note">Messages are saved in this browser only and are not yet shared with other visitors.</small>
+  </div>
+</section>
+<section class="section-wrap section-block confession-section" id="confessions">
+  <div class="section-heading"><div><div class="eyebrow">A SAFE SPACE TO SHARE</div><h2>Class <em>confessions.</em></h2></div><p>Share a thought, a little secret, or an appreciation with the TBI 5E community. Your name is optional.</p></div>
+  <div class="confession-panel feature-panel">
+    <div class="panel-topline"><span>THE ETHEREAL CONFESSION WALL</span><span>SHARE WITH KINDNESS ✦</span></div>
+    <form id="confessionForm" class="confession-form">
+      <label class="confession-name-label">Display name <span>(optional)</span><input id="confessionName" maxlength="32" placeholder="Leave blank to stay anonymous"></label>
+      <label class="confession-message-label">Your confession<textarea id="confessionMessage" maxlength="360" rows="4" placeholder="Write what is on your mind..." required></textarea></label>
+      <label class="anonymous-toggle"><input id="confessionAnonymous" type="checkbox" checked><span>Post anonymously</span></label>
+      <button class="mini-submit" type="submit">SHARE CONFESSION ✦</button>
+    </form>
+    <div id="confessionList" class="confession-list" aria-live="polite"></div>
+    <small class="local-note">Please be respectful and do not share private or identifying information. Confessions are currently saved only in this browser, not shared with other visitors.</small>
+  </div>
+</section>
+<section class="closing section-wrap"><div class="closing-mark">5E</div><div><div class="eyebrow">ONE CLASS, MANY STORIES</div><h2>We are <em>THE REAL MVP.</em></h2><p>Different strengths. Shared dreams. One community.</p></div><a class="button button-gold" href="#home">Back to top ↑</a></section></main>
+
+<!-- ETHEREAL floating class announcement -->
+<aside class="ethereal-toast" id="etherealToast" aria-label="Class announcement" aria-live="polite">
+  <div class="toast-symbol" aria-hidden="true">✦</div>
+  <div class="toast-copy">
+    <small>ETHEREAL · CLASS UPDATE</small>
+    <strong>A little reminder for our class</strong>
+    <p>Stay connected with our schedule, achievements, and latest class memories.</p>
+    <a href="#schedule" class="toast-link">Explore class updates <span>↗</span></a>
+  </div>
+  <button class="toast-close" id="toastClose" aria-label="Dismiss announcement">×</button>
+</aside>
+
+<!-- ETHEREAL Quick Tools Overlay -->
+<section class="eth-tools-panel" id="ethToolsPanel" aria-label="Quick tools" hidden>
+  <div class="eth-tools-head"><div><small>ETHEREAL UTILITIES</small><h3>Quick <em>Tools.</em></h3></div><button type="button" class="eth-tools-close" id="ethToolsClose" aria-label="Close quick tools">×</button></div>
+  <div class="eth-tools-tabs" role="tablist" aria-label="Choose tool">
+    <button type="button" class="eth-tool-tab is-active" data-tool-tab="weather" role="tab" aria-selected="true">☼ Weather</button>
+    <button type="button" class="eth-tool-tab" data-tool-tab="qr" role="tab" aria-selected="false">▦ QR Code</button>
+    <button type="button" class="eth-tool-tab" data-tool-tab="grade" role="tab" aria-selected="false">✧ Grade</button>
+    <button type="button" class="eth-tool-tab" data-tool-tab="groups" role="tab" aria-selected="false">♧ Groups</button>
+    <button type="button" class="eth-tool-tab" data-tool-tab="timer" role="tab" aria-selected="false">◷ Timer</button>
+    <button type="button" class="eth-tool-tab" data-tool-tab="words" role="tab" aria-selected="false">Aa Words</button>
+    <button type="button" class="eth-tool-tab" data-tool-tab="deadline" role="tab" aria-selected="false">⌛ Deadline</button>
+  </div>
+  <div class="eth-tool-content" id="ethWeatherTool" role="tabpanel">
+    <div class="eth-weather-top"><span class="eth-weather-icon" id="ethWeatherIcon">☁</span><div><small>LIVE CAMPUS WEATHER</small><strong id="ethWeatherTemp">--°C</strong><span id="ethWeatherCondition">Enter a city to check weather</span></div></div>
+    <label class="eth-tool-label" for="ethWeatherCity">CITY / LOCATION</label>
+    <div class="eth-tool-inline"><input id="ethWeatherCity" type="search" value="Malang" placeholder="e.g. Malang, Indonesia"><button type="button" id="ethWeatherSearch">Check</button></div>
+    <div class="eth-weather-meta"><span id="ethWeatherPlace">Malang</span><span id="ethWeatherWind">Wind -- km/h</span></div>
+    <p class="eth-tool-note" id="ethWeatherUpdated">Weather data by Open-Meteo</p>
+  </div>
+  <div class="eth-tool-content" id="ethQrTool" role="tabpanel" hidden>
+    <small class="eth-qr-intro">Turn a link or text into a scannable QR code.</small>
+    <label class="eth-tool-label" for="ethQrInput">YOUR LINK OR TEXT</label>
+    <textarea id="ethQrInput" rows="3" placeholder="Paste a class material, assignment, or website link..."></textarea>
+    <button type="button" class="eth-qr-create" id="ethQrCreate">GENERATE QR CODE ↗</button>
+    <div class="eth-qr-result" id="ethQrResult" hidden><img id="ethQrImage" alt="Generated QR code"><span>Scan to open your content</span><a id="ethQrOpen" target="_blank" rel="noopener" hidden>Open link ↗</a></div>
+    <p class="eth-tool-note">Tip: use a public link so classmates can open it.</p>
+  </div>
+  <div class="eth-tool-content" id="ethGradeTool" role="tabpanel" hidden>
+    <small class="eth-qr-intro">Calculate a weighted final score from your course components.</small>
+    <div class="eth-tool-two"><label class="eth-tool-label">SCORE (%)<input class="eth-mini-input" id="ethGradeScore1" type="number" min="0" max="100" placeholder="Assignment"></label><label class="eth-tool-label">WEIGHT (%)<input class="eth-mini-input" id="ethGradeWeight1" type="number" min="0" max="100" placeholder="30"></label></div>
+    <div class="eth-tool-two"><label class="eth-tool-label">SCORE (%)<input class="eth-mini-input" id="ethGradeScore2" type="number" min="0" max="100" placeholder="Midterm"></label><label class="eth-tool-label">WEIGHT (%)<input class="eth-mini-input" id="ethGradeWeight2" type="number" min="0" max="100" placeholder="30"></label></div>
+    <div class="eth-tool-two"><label class="eth-tool-label">SCORE (%)<input class="eth-mini-input" id="ethGradeScore3" type="number" min="0" max="100" placeholder="Final exam"></label><label class="eth-tool-label">WEIGHT (%)<input class="eth-mini-input" id="ethGradeWeight3" type="number" min="0" max="100" placeholder="40"></label></div>
+    <button type="button" class="eth-qr-create" id="ethGradeCalculate">CALCULATE FINAL GRADE</button><p class="eth-tool-result" id="ethGradeResult" aria-live="polite">Enter scores and weights to begin.</p>
+  </div>
+  <div class="eth-tool-content" id="ethGroupsTool" role="tabpanel" hidden>
+    <small class="eth-qr-intro">Paste student names, one name per line, and create random groups.</small>
+    <label class="eth-tool-label" for="ethGroupNames">STUDENT NAMES</label><textarea id="ethGroupNames" rows="5" placeholder="Alya&#10;Bima&#10;Citra&#10;..." ></textarea>
+    <div class="eth-tool-two"><label class="eth-tool-label">GROUP SIZE<input class="eth-mini-input" id="ethGroupSize" type="number" min="2" max="50" value="4"></label><button type="button" class="eth-qr-create eth-group-button" id="ethGroupGenerate">SHUFFLE GROUPS</button></div><div id="ethGroupResult" class="eth-tool-result" aria-live="polite"></div>
+  </div>
+  <div class="eth-tool-content" id="ethTimerTool" role="tabpanel" hidden>
+    <small class="eth-qr-intro">A simple presentation countdown timer.</small><div class="eth-timer-display" id="ethTimerDisplay">05:00</div>
+    <div class="eth-tool-two"><label class="eth-tool-label">MINUTES<input class="eth-mini-input" id="ethTimerMinutes" type="number" min="0" max="180" value="5"></label><label class="eth-tool-label">SECONDS<input class="eth-mini-input" id="ethTimerSeconds" type="number" min="0" max="59" value="0"></label></div>
+    <div class="eth-tool-inline"><button type="button" id="ethTimerStart">START</button><button type="button" id="ethTimerReset">RESET</button></div><p class="eth-tool-note" id="ethTimerStatus" aria-live="polite">Ready when you are.</p>
+  </div>
+  <div class="eth-tool-content" id="ethWordsTool" role="tabpanel" hidden>
+    <small class="eth-qr-intro">Check the length of an abstract, essay, or assignment.</small><label class="eth-tool-label" for="ethWordInput">PASTE YOUR TEXT</label><textarea id="ethWordInput" rows="7" placeholder="Start typing or paste your text here..."></textarea><div class="eth-word-stats"><span><strong id="ethWordCount">0</strong> Words</span><span><strong id="ethCharCount">0</strong> Characters</span><span><strong id="ethSentenceCount">0</strong> Sentences</span></div>
+  </div>
+  <div class="eth-tool-content" id="ethDeadlineTool" role="tabpanel" hidden>
+    <small class="eth-qr-intro">Set an assignment or project deadline and see the time remaining.</small><label class="eth-tool-label" for="ethDeadlineDate">DEADLINE DATE & TIME</label><input class="eth-mini-input" id="ethDeadlineDate" type="datetime-local"><button type="button" class="eth-qr-create" id="ethDeadlineCheck">CHECK COUNTDOWN</button><p class="eth-tool-result" id="ethDeadlineResult" aria-live="polite">Choose your deadline above.</p>
+  </div>
+</section>
+
+<!-- ETHEREAL quick access dock -->
+<nav class="quick-dock" id="quickDock" aria-label="Quick access">
+  <a href="#home" class="dock-link active" aria-label="Home" title="Home"><span>⌂</span><small>HOME</small></a>
+  <a href="#members" class="dock-link" aria-label="Members" title="Members"><span>♙</span><small>MEMBERS</small></a>
+  <a href="#schedule" class="dock-link" aria-label="Schedule" title="Schedule"><span>◷</span><small>SCHEDULE</small></a>
+  <a href="#achievements" class="dock-link" aria-label="Achievements" title="Achievements"><span>✧</span><small>AWARDS</small></a>
+  <a href="#gallery" class="dock-link" aria-label="Memories" title="Memories"><span>▧</span><small>MEMORIES</small></a>
+  <button class="dock-link eth-tools-trigger" id="ethToolsTrigger" type="button" aria-expanded="false" aria-controls="ethToolsPanel" aria-label="Open Quick Tools" title="Quick Tools"><span class="eth-tools-spark">✦</span><small>TOOLS</small></button>
+</nav>
+<div class="photo-lightbox" id="photoLightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" src="" alt=""><p id="lightboxCaption"></p></div><button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<footer>
+<div class="footer-brand"><span class="brand-mark">E</span><span><b>TBI 5E</b><small class="footer-ethereal">ETHEREAL</small></span></div>
+<span>ENGLISH EDUCATION DEPARTMENT</span><span>THE REAL MVP ✦</span>
+<a class="instagram-link" href="https://www.instagram.com/etherealofenglish/" target="_blank" rel="noopener" aria-label="Instagram @etherealofenglish"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg><span>@etherealofenglish</span></a>
+<small>© <span id="year"></span> TBI 5E · ETHEREAL Class Hub.</small></footer><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="script.js"></script></body></html>
